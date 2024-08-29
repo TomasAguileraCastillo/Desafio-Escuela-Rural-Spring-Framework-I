@@ -1,0 +1,11 @@
+cl\praxis\DesafioEscuelaRural\model\repository\StudentsRepository.class
+cl\praxis\DesafioEscuelaRural\ServletInitializer.class
+cl\praxis\DesafioEscuelaRural\controllers\StudentController.class
+cl\praxis\DesafioEscuelaRural\model\entities\Student.class
+cl\praxis\DesafioEscuelaRural\model\services\StudentsService.class
+cl\praxis\DesafioEscuelaRural\model\services\StudentsServiceImpl.class
+cl\praxis\DesafioEscuelaRural\model\entities\Course.class
+cl\praxis\DesafioEscuelaRural\model\services\CourseService.class
+cl\praxis\DesafioEscuelaRural\DesafioEscuelaRuralApplication.class
+cl\praxis\DesafioEscuelaRural\model\services\CourseServiceImpl.class
+cl\praxis\DesafioEscuelaRural\model\repository\CourseRepository.class

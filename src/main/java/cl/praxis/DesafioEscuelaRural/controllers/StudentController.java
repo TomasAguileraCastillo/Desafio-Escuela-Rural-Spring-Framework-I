@@ -1,12 +1,11 @@
 package cl.praxis.DesafioEscuelaRural.controllers;
 
+import cl.praxis.DesafioEscuelaRural.model.entities.Student;
 import cl.praxis.DesafioEscuelaRural.model.services.CourseService;
 import cl.praxis.DesafioEscuelaRural.model.services.StudentsService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/")
@@ -35,6 +34,11 @@ public class StudentController {
         return "listadoCursos";
     }
 
+    @GetMapping("/newSt")
+    public String createGet(){
+        return "agregarEstudiante";
+    }
+
 
     //Borrar
     @GetMapping("/del/{id}")
@@ -44,6 +48,12 @@ public class StudentController {
     }
 
 
+    //Post
+    @PostMapping("/new")
+    public String createPost(@ModelAttribute Student student){
+        boolean resp = studentsService.create(student);
+        return  "redirect:/";
+    }
 
 
 
