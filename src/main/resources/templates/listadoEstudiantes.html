@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+
+
+<header th:replace="~{header :: nav}"></header>
+<div class="container">
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">#Id</th>
+        <th scope="col">Nombre de Estudiante</th>
+        <th scope="col">Apellido de Estudiante</th>
+        <th scope="col">Correo de Estudiante</th>
+        <th scope="col">Curso</th>
+        <th scope="col">Acciones</th>
+
+    </tr>
+    </thead>
+    <tbody class="table-group-divider">
+    <tr th:each=" s : ${students}">
+        <th th:text = "${s.getIdStudents()}" scope="row"></th>
+        <td th:text = "${s.getFirstNameStudents()}">Mark</td>
+        <td th:text = "${s.getLastNameStudents()}">Otto</td>
+        <td th:text = "${s.getEmailStudents()}">@mdo</td>
+        <td  th:text="${s.getC() != null ? s.getC().getCourse() : 'Curso no asignado'}">Otto</td>
+
+        <td>
+            <a href="" class="btn btn-success" data-bs-toggle="tooltip" data-bs-title="Editar Registro">
+                <i class="bi bi-pencil-square"> </i>
+            </a>
+            <a href="" class="btn btn-danger" data-bs-toggle="tooltip" data-bs-title="Eliminar Registro" >
+                <i class="bi bi-trash3"> </i>
+            </a>
+
+        </td>
+    </tr>
+    </tbody>
+</table>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
