@@ -3,7 +3,7 @@ package cl.praxis.DesafioEscuelaRural.controllers;
 import cl.praxis.DesafioEscuelaRural.model.entities.Student;
 import cl.praxis.DesafioEscuelaRural.model.services.CourseService;
 import cl.praxis.DesafioEscuelaRural.model.services.StudentsService;
-import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Controller ;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
@@ -41,7 +41,7 @@ public class StudentController {
 
 
     //Borrar
-    @GetMapping("/del/{id}")
+    @GetMapping("/del/{id}" )
     public String delete(@PathVariable("id") int id){
         boolean resp = studentsService.delete(id);
         return "redirect:/";
