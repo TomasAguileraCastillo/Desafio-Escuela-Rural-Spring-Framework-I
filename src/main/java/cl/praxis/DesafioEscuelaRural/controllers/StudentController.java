@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/")
-public class StudentController {
-    private final StudentsService studentsService;
+public class StudentController {  
+    private final StudentsService studentsService ;
     private final CourseService courseService ;
 
     //Constructor
