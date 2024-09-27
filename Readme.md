@@ -6,9 +6,9 @@ Lee todo el documento antes de comenzar el desarrollo individual de este desafí
 asegurarte de tener el máximo de puntaje y enfocar bien los esfuerzos. Una vez terminado el
 desafío, comprime la carpeta que contiene el desarrollo de los requerimientos solicitados y
 sube el .zip en el LMS.
-Tiempo asociado: 2 hrs cronológicas.
+Tiempo asociado: 2 hrs cronológicas .
 
-Descripción
+Descripción 
 --
 Una fundación asociada a una entidad educacional rural busca crear un sistema que registre
 a los alumnos y los cursos a los cuales pertenecen cada uno de ellos, para así poder tener
